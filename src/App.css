@@ -21,7 +21,7 @@
     margin-right: 5px;
 }
 
-.coordinate-input__text {
+.input__text {
     font-size: 0.8vw;
 }
 
@@ -42,7 +42,32 @@
     margin-bottom: 8px;
 }
 
-.scale-input,
-.rotation-input {
+.input-wrapper,
+.input-wrapper,
+.input-wrapper {
     margin-bottom: 8px;
+}
+
+.rotation-input {
+    font-size: 1vw;
+    width: 3.5vw;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.calculation-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid black;
+}
+
+.calculation-wrapper a:hover {
+    cursor: pointer;
+}
+
+.calculation-wrapper .active {
+    color: red;
 }

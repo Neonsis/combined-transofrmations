@@ -4,28 +4,28 @@ import CoordinatePlane from "./components/CoordinatePlane";
 import CoordinateInfo from "./components/CoordinateInfo";
 import {axisEnum} from "./axisEnum";
 
+const defaultValue = [{xValue: 3, yValue: 4}, {xValue: 6, yValue: 9}, {
+    xValue: 10,
+    yValue: 9
+}, {xValue: 15, yValue: 4}];
+
 function App() {
-    const [coordinates, setCoordinates] = useState([{xValue: 3, yValue: 4}, {xValue: 6, yValue: 9}, {
-        xValue: 10,
-        yValue: 9
-    }, {xValue: 15, yValue: 4}]);
-    const [axis, setAxis] = useState(axisEnum.OX);
-    const [scale, setScale] = useState(1);
-    const [rotation, setRotation] = useState(0);
+    const [options, setOptions] = useState({
+        coordinates: [],
+        axis: axisEnum.OX,
+        scale: 1,
+        rotation: 0,
+        xAxisStartingPoint: 1,
+        yAxisStartingPoint: 1,
+    });
 
     return (
         <div className="app">
             <CoordinatePlane
-                coordinates={coordinates}
-                axis={axis}
-                scale={scale}
-                rotation={rotation}
+                options={options}
             />
             <CoordinateInfo
-                setCoordinates={setCoordinates}
-                setAxis={setAxis}
-                setScale={setScale}
-                setRotation={setRotation}
+                setOptions={setOptions}
             />
         </div>
     );

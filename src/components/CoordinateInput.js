@@ -16,9 +16,9 @@ const CoordinateInput = ({onChange, id, name}) => {
 
     return (
         <div className="coordinate-input-item">
-            <span className="coordinate-input__text">Координата {name} - x:</span>
+            <span className="input__text">Координата {name} - x:</span>
             <input className="input" type="number" value={xValue} onChange={e => setXValue(e.target.value)}/>
-            <span className="coordinate-input__text">y:</span>
+            <span className="input__text">y:</span>
             <input className="input" type="number" value={yValue} onChange={e => setYValue(e.target.value)}/>
         </div>
     );

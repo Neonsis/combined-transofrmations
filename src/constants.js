@@ -1,10 +1,5 @@
 export const GRID_SIZE = 25;
 
-export const X_AXIS_DISTANCE_GRID_LINES = 10;
-export const Y_AXIS_DISTANCE_GRID_LINES = 20;
-export const X_AXIS_STARTING_POINT = 1;
-export const Y_AXIS_STARTING_POINT = 1;
-
 export const X_AXIS_PADDING = 15;
 export const Y_AXIS_PADDING = 8
 export const MARK_LENGTH = 3;
