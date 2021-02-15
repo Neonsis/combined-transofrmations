@@ -1,0 +1,1 @@
+export const axisEnum = Object.freeze({"OX": "OX", "OY": "OY", "XY": "XY"});
